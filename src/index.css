@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  margin: 0;
+  background-color: #202020;
+  font-size: 12px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+@layer components{
+  .contain-center{
+    @apply container mx-auto;
+  }
+
+  
+}
