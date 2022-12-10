@@ -13,6 +13,28 @@ body {
   text-transform: uppercase;
 }
 
+svg.slick-arrow.slick-next {
+  color: white;
+  right: 0;
+  height: 70px;
+  width: 70px;
+  top: 300px !important;
+  transform: translate(55%,-50%);
+}
+
+.slick-list{
+  overflow: visible !important;
+}
+.slick-dots{
+  top: 500px !important;
+}
+.slick-dots li{
+  margin-right: 2px !important;
+}
+
+.slick-active>div{
+  background-color: red !important;
+}
 
 @layer components{
   .contain-center{
