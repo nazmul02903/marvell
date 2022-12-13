@@ -13,13 +13,12 @@ body {
   text-transform: uppercase;
 }
 
-svg.slick-arrow.slick-next {
-  color: white;
-  right: 0;
-  height: 70px;
-  width: 70px;
-  top: 300px !important;
-  transform: translate(55%,-50%);
+.slick-next:before{
+  font-size: 40px !important;
+}
+
+.slick-next{
+  top: 280px !important;
 }
 
 .slick-list{
@@ -36,9 +35,13 @@ svg.slick-arrow.slick-next {
   background-color: red !important;
 }
 
+
 @layer components{
   .contain-center{
     @apply container mx-auto;
+  }
+  .common-input{
+    @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 outline-none
   }
 
   

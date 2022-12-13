@@ -1,6 +1,8 @@
 import { BiSearch } from "react-icons/bi";
+import { GlobalStates } from "../../context";
 
 export default function Header() {
+  const {setShowModal} = GlobalStates();
   return (
     <>
     <div className="border-y border-y-bcolor">
@@ -8,7 +10,7 @@ export default function Header() {
         <div className="flex items-center basis-[190px] border-x border-x-bcolor gap-1 justify-center">
           <img src="/imgs/inlogo.png" alt="" />
           <div className="flex gap-2">
-            <h4>Sign In</h4>
+            <h4 className="cursor-pointer" onClick={() => setShowModal(true)}>Sign In</h4>
             <span>|</span>
             <h4>join</h4>
           </div>
